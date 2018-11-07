@@ -4,7 +4,7 @@
 
 A simple Command Line Interface Wallet using [AcmCore Wallet Service] (https://github.com/Actinium-project/acmcore-wallet-service) and its *official* client lib, acmcore-wallet-client] (https://github.com/Actinium-project/acmcore-wallet-client)
 
-This can be used to operate Bitcoin and Bitcoin Cash wallets.
+This can be used to operate Actinium and Bitcoin Cash wallets.
 
 
 # Quick Guide
@@ -46,18 +46,18 @@ wallet address
 # Check your balance
 wallet balance
    
-# Spend coins. Amount can be specified in btc, bit or sat (default)
+# Spend coins. Amount can be specified in acm, bit or sat (default)
 wallet send 1xxxxx 1000bit "1000 bits to mother"
   * Tx created: ID 01425517364314b9ac6017-e97d-46d5-a12a-9d4e5550abef [pending]
     RequiredSignatures: 2
 
-# You can use 1000bit or 0.0001btc or 100000sat. (Set BIT_UNIT to btc/sat/bit to select output unit).
+# You can use 1000bit or 0.0001acm or 100000sat. (Set BIT_UNIT to acm/sat/bit to select output unit).
 
 It is also possible to use Payment Protocol or BIP21. Examples:
 
 
-wallet send 'bitcoin:?r=https://bitpay.com/i/8rR7ydnLfQGqnRW1mqvXxJ'
-wallet send 'bitcoin:1N4zjmp1ojRborDiAu62MyCpaz9wjhPLM?amount=1'
+wallet send 'actinium:?r=https://bitpay.com/i/8rR7ydnLfQGqnRW1mqvXxJ'
+wallet send 'actinium:1N4zjmp1ojRborDiAu62MyCpaz9wjhPLM?amount=1'
 
 
 

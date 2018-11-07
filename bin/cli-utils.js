@@ -220,7 +220,7 @@ Utils.findOneTxProposal = function(txps, id) {
 };
 
 Utils.UNITS2 = {
-  'btc': 100000000,
+  'acm': 100000000,
   'bit': 100,
   'sat': 1,
 };
@@ -270,8 +270,8 @@ Utils.COIN = {
     maxDecimals: 8,
     minDecimals: 8,
   },
-  btc: {
-    name: 'btc',
+  acm: {
+    name: 'acm',
     toSatoshis: 100000000,
     maxDecimals: 8,
     minDecimals: 8,
@@ -315,8 +315,8 @@ Utils.renderAmount = function(satoshis, coin, opts) {
 
   opts = opts || {};
 
-  var coin = coin || 'btc';
-  var u = Utils.COIN[coin] || Utils.COIN.btc;
+  var coin = coin || 'acm';
+  var u = Utils.COIN[coin] || Utils.COIN.acm;
   var amount = clipDecimals((satoshis / u.toSatoshis), u.maxDecimals).toFixed(u.maxDecimals);
   return addSeparators(amount, opts.thousandsSeparator || ',', opts.decimalSeparator || '.', u.minDecimals) + ' ' + u.name;
 };

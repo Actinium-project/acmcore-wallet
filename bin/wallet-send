@@ -14,7 +14,7 @@ program = utils.configureCommander(program);
 program
   .option('--fee <fee-per-kb>', 'Fee per kB to use. Default 100bits.')
   .usage('[options] <address> <amount> [note]')
-  .description('Create a proposal for sending actiniums to a destination address.\n  The amount can be specified in bit, btc or sat (the default).');
+  .description('Create a proposal for sending actiniums to a destination address.\n  The amount can be specified in bit, acm or sat (the default).');
 
 program.on('--help', function() {
   console.log('  Examples:');
@@ -90,11 +90,11 @@ utils.getClient(program, {
   var uri, addr, amount, note;
 
   // no backwards compat uri
-  if ((/^bitcoin(cash)?:\?r=[\w+]/).exec(arg1)) {
+  if ((/^actinium(cash)?:\?r=[\w+]/).exec(arg1)) {
     var coin2 = 'acm';
     if (arg1.indexOf('bitcoincash') === 0) coin2 = 'bch';
     if (coin != coin2) utils.die('Wallet / Payment Coin mismatch');
-    uri  = arg1.replace(/bitcoin(cash)?:\?r=/, '');
+    uri  = arg1.replace(/actinium(cash)?:\?r=/, '');
 
   } else {
 
