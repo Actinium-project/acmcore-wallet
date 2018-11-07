@@ -1,22 +1,22 @@
 {
-  "name": "bitcore-wallet",
-  "description": "A CLI Mutisig HD Bitcoin Wallet, demo for Bitcore Wallet Service",
-  "author": "BitPay Inc",
-  "version": "1.2.0",
+  "name": "acmore-wallet",
+  "description": "A CLI Mutisig HD Actinium Wallet, demo for Bitcore Wallet Service",
+  "author": "Harris Brakmic",
+  "version": "1.0.0",
   "keywords": [
-    "bitcoin",
-    "copay",
+    "actinium",
+    "acmcopay",
     "multisig",
     "wallet"
   ],
   "repository": {
-    "url": "git@github.com:bitpay/bitcore-wallet.git",
+    "url": "git@github.com:bitpay/acmcore-wallet.git",
     "type": "git"
   },
   "bugs": {},
   "dependencies": {
     "async": "^2.5.0",
-    "bitcore-wallet-client": "^6.7.4",
+    "acmcore-wallet-client": "^6.7.4",
     "commander": "^2.6.0",
     "lodash": "^3.3.1",
     "moment": "^2.9.0",
@@ -36,6 +36,10 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "contributors": [
+    {
+      "name": "Harris Brakmic",
+      "email": "brakmic@gmail.com"
+    },
     {
       "name": "Ivan Socolsky",
       "email": "ivan@gmail.com"

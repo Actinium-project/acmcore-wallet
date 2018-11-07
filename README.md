@@ -1,8 +1,8 @@
-# bitcore-wallet
+# acmcore-wallet
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-wallet.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet)
+[![NPM Package](https://img.shields.io/npm/v/acmcore-wallet.svg?style=flat-square)](https://www.npmjs.org/package/acmcore-wallet)
 
-A simple Command Line Interface Wallet using [Bitcore Wallet Service] (https://github.com/bitpay/bitcore-wallet-service) and its *official* client lib, bitcore-wallet-client] (https://github.com/bitpay/bitcore-wallet-client)
+A simple Command Line Interface Wallet using [AcmCore Wallet Service] (https://github.com/bitpay/acmcore-wallet-service) and its *official* client lib, acmcore-wallet-client] (https://github.com/bitpay/acmcore-wallet-client)
 
 This can be used to operate Bitcoin and Bitcoin Cash wallets.
 
@@ -13,7 +13,7 @@ This can be used to operate Bitcoin and Bitcoin Cash wallets.
 # Use -h or BWS_HOST to setup the BWS URL (defaults to localhost:3001)
 # 
 # Start a local BWS instance be doing:
-# git clone https://github.com/bitpay/bitcore-wallet-service.git bws
+# git clone https://github.com/bitpay/acmcore-wallet-service.git bws
 # cd bws; npm install; npm start
 
 cd bin
